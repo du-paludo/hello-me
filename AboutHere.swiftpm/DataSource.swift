@@ -7,7 +7,7 @@ class DataSource {
     
     // Local onde se encontram os dados que são apresentados no aplicativo. Cada CardModel corresponde a um Card na tela inicial do app.
     private static let data = [
-        CardModel(imageName: "elevador", title: "Mentores", text: "Essa é a foto do primeiro dia de trabalho da mentoria, ela foi tirada 3 semanas depois do primeiro de trabalho da mentoria."),
+        CardModel(imageName: "mentoria", title: "Mentores", text: "Essa é a foto do primeiro dia de trabalho da mentoria, ela foi tirada 3 semanas depois do primeiro de trabalho da mentoria."),
         CardModel(imageName: "elevador", title: "Elevador", text: "Esse é o nosso elevador! A forma mais demorada de chegar ao segundo andar… Ele é livre para uso e uma forma de garantir que todes possam usufruir do espaço da Academy com autonomia. Ele foi peça importantíssima na Missão do Monolito."),
         CardModel (imageName: "microondas", title: "Microondas", text: "Temos um microondas exclusivo e muito tecnológico que permite esquentar comidas, água para o chá, comidas, água, salgados, mas nada de pipoca!!!!"),
         CardModel (imageName: "sofazinho", title: "Sofázinhos", text: "Os sofázinhos são patrimônio tombado e são considerados uma das 7 maravilhas da Academy. Dentre suas várias funções, eles são muito conhecidos por acolher estudantes (cansados ou não) que chegam antes do horário."),

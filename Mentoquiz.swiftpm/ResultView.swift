@@ -15,9 +15,6 @@ struct ResultView: View {
                 .bold()
                 .font(.largeTitle)
             Spacer()
-//            Button("Refazer Quiz") {
-//                data.restartQuiz()
-//            }
             Button {
                 withAnimation(.bouncy) {
                     data.restartQuiz()
