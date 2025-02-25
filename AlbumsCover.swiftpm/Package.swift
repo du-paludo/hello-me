@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "AlbunsCover",
+    name: "AlbumsCover",
     platforms: [
         .iOS("15.2")
     ],
     products: [
         .iOSApplication(
-            name: "AlbunsCover",
+            name: "AlbumsCover",
             targets: ["AppModule"],
             bundleIdentifier: "com.djeniferrenata.AlbunsCover",
             teamIdentifier: "Y7XR3D999P",
