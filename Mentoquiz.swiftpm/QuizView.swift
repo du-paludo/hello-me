@@ -10,8 +10,20 @@ struct QuizView: View {
     
     var body: some View {
         VStack {
+            Text("Quiz ADA")
+                .font(.headline)
+                .foregroundStyle(.gray)
+                .padding()
+            Spacer()
+                .frame(height: 64)
             Text(data.getCurrentQuestion().text)
+                .font(.title)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+//                .frame(height: 160)
+//                .fixedSize(horizontal: false, vertical: false)
             
+//            Spacer()
             LazyVGrid(columns: columns, spacing: 16, content: {
                 ForEach(data.getCurrentQuestion().options) { option in
                     Button {
@@ -29,7 +41,8 @@ struct QuizView: View {
                                     .clipShape(RoundedRectangle(cornerRadius: 12))
                             }
                         }
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: 150)
+//                        .frame(height: 150)
                         .padding(.vertical, 24)
                         .padding(.horizontal, 16)
                         .background {
@@ -40,6 +53,7 @@ struct QuizView: View {
                     .id(option.id)
                 }
             })
+            Spacer()
         }
         .padding(.horizontal, 16)
     }
