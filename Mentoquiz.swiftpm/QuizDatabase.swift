@@ -15,10 +15,10 @@ import SwiftUI
             Option(text: "𝘈𝘦𝘥𝘦𝘴 𝘢𝘦𝘨𝘺𝘱𝘵𝘪", image: "aa", mentorsRelated: [.jujuba])
         ]),
         Question(text: "Qual seu objeto da Ada favorito?", options: [
-            Option(text: "Caneta de giz (tá seca)", image: nil, mentorsRelated: [.afonso, .munhoz, .gabi]),
-            Option(text: "Monolito", image: nil, mentorsRelated: [.jujuba, .theo]),
-            Option(text: "Cafeteira", image: nil, mentorsRelated: [.isoo, .mari]),
-            Option(text: "Cadeiras Ergonômicas", image: nil, mentorsRelated: [.nat, .flora, .naomi, .eduardo])
+            Option(text: "Caneta de giz (tá seca)", image: "caneta", mentorsRelated: [.afonso, .munhoz, .gabi]),
+            Option(text: "Monolito", image: "monolito", mentorsRelated: [.jujuba, .theo]),
+            Option(text: "Cafeteira", image: "caf", mentorsRelated: [.isoo, .mari]),
+            Option(text: "Cadeiras Ergonômicas", image: "cadeiras", mentorsRelated: [.nat, .flora, .naomi, .eduardo])
         ]),
         Question(text: "Se você pudesse mudar de nome, para qual seria?", options: [
             Option(text: "Dadeshkeliani", image: nil, mentorsRelated: [.nat, .jujuba, .afonso, .theo]),
@@ -27,10 +27,10 @@ import SwiftUI
             Option(text: "Binder Jr.", image: nil, mentorsRelated: [.flora, .naomi])
         ]),
         Question(text: "Se você fosse um dispositivo apple, qual você seria?", options: [
-            Option(text: "Airtag", image: nil, mentorsRelated: [.nat, .munhoz, .gabi]),
-            Option(text: "Cabo lightning", image: nil, mentorsRelated: [.mari]),
-            Option(text: "Magsafe", image: nil, mentorsRelated: [.isoo, .eduardo]),
-            Option(text: "Galaxy", image: nil, mentorsRelated: [.jujuba, .afonso, .flora, .theo, .naomi])
+            Option(text: "Airtag", image: "airtag", mentorsRelated: [.nat, .munhoz, .gabi]),
+            Option(text: "Cabo lightning", image: "lightning", mentorsRelated: [.mari]),
+            Option(text: "Magsafe", image: "magsafe", mentorsRelated: [.isoo, .eduardo]),
+            Option(text: "Galaxy", image: "galaxy", mentorsRelated: [.jujuba, .afonso, .flora, .theo, .naomi])
         ]),
         Question(text: "Que horas você seria?", options: [
             Option(text: "3:00", image: nil, mentorsRelated: [.munhoz, .eduardo]),
