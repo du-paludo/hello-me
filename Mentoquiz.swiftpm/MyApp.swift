@@ -7,7 +7,7 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(data)
+                .environment(data) // Permite a classe data ser utilizada como variável de ambiente nas views filhas da ContentView
         }
     }
 }

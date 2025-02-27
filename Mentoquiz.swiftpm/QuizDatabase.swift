@@ -1,12 +1,13 @@
 import SwiftUI
 
 @Observable class QuizDatabase {
+    // Banco de dados de perguntas
     private let questions: [Question] = [
         Question(text: "Qual é a sua fruta preferida?", options: [
             Option(text: "Não gosto de fruta", image: "no-fruits", mentorsRelated: [.nat, .theo]),
             Option(text: "Tâmara", image: "tamara", mentorsRelated: [.isoo]),
             Option(text: "Abacate", image: "abacate", mentorsRelated: [.flora, .naomi, .gabi]),
-            Option(text: "Limão", image: "limão", mentorsRelated: [.mari, .jujuba, .afonso, .munhoz, .eduardo])
+            Option(text: "Limão", image: "limao", mentorsRelated: [.mari, .jujuba, .afonso, .munhoz, .eduardo])
         ]),
         Question(text: "Qual seu espírito animal?", options: [
             Option(text: "Macaco de Gibraltar", image: "mg", mentorsRelated: [.isoo, .afonso, .theo, .eduardo]),
@@ -62,7 +63,12 @@ import SwiftUI
     }
     
     func getHighestScoreMentor() -> Mentor {
-        return mentorPoints.max(by: {$0.value < $1.value})?.key ?? .gabi
+        // Verifica qual é a maior quantidade de pontos
+        let maxScore = mentorPoints.values.max()
+        // Seleciona os mentores com a maior quantidade de pontos
+        let topMentors = mentorPoints.filter { $0.value == maxScore }.keys
+        // Retorna um mentor aleatório entre os mais pontuados
+        return topMentors.randomElement() ?? .gabi
     }
     
     func getCurrentQuestion() -> Question {
@@ -74,9 +80,11 @@ import SwiftUI
     }
     
     func answerQuestion(mentors: [Mentor]) {
-        currentIndex += 1
-        for mentor in mentors {
-            mentorPoints[mentor]! += 1
+        if currentIndex < questions.count {
+            currentIndex += 1
+            for mentor in mentors {
+                mentorPoints[mentor]! += 1
+            }
         }
     }
 }

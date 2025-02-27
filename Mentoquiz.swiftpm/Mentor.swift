@@ -1,5 +1,6 @@
 import SwiftUI
 
+// Enum contendo todos os mentores jr
 enum Mentor: CaseIterable {
     case eduardo
     case gabi
